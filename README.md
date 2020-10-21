@@ -64,3 +64,11 @@ I tsconfig.json gör följande ändringar på lämpliga rader:
 "noFallthroughCasesInSwitch": true,    
 ````
 
+## 2. Kompilering och körning
+
+(Med inställningar enligt ovanstående `tsconfig.json`
+
+`tsc` (Kompilera)
+
+`node app/js/filens_namn.js` (Kör)
+
