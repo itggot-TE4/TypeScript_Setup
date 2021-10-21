@@ -45,23 +45,24 @@ I tsconfig.json gör följande ändringar på lämpliga rader:
 (låt bli de första 5 raderna för Exercism, men `Strict Type Checking Options` och `Additional Checks` borde vara ok att koppla på i Exercisms `tsconfig.json`
 
 ````json
-"target": "ESNEXT",
-"module": "ESNEXT",
+"target": "es2021",
+"module": "es2021",
 "sourceMap": true,
-"outDir": "./app/js",
+"outDir": "./app/",
 "removeComments": true, 
 
 
  /* Strict Type-Checking Options */
-"strict": true,              
-"noImplicitAny": true,       
-"strictNullChecks": true,             
-"strictFunctionTypes": true,   
-"noImplicitThis": true,
-/* Additional Checks */
-"noUnusedLocals": true,              
-"noImplicitReturns": true,           
-"noFallthroughCasesInSwitch": true,    
+ "strict": true,                                    
+ "noImplicitAny": true,                          
+"strictNullChecks": true,                       
+"strictFunctionTypes": true,                    
+"strictBindCallApply": true,                    
+"strictPropertyInitialization": true,           
+"noImplicitThis": true,                         
+"useUnknownInCatchVariables": true,             
+"alwaysStrict": true,                           
+"noUnusedLocals": true,     
 ````
 
 ## 2. Kompilering och körning
