@@ -46,7 +46,7 @@ I tsconfig.json gör följande ändringar på lämpliga rader:
 
 ````json
 "target": "es2021",
-"module": "es2021",
+"module": "commonjs",
 "sourceMap": true,
 "outDir": "./app/",
 "removeComments": true, 
